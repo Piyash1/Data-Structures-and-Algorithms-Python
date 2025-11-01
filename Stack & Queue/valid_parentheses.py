@@ -7,7 +7,7 @@ class Solution:
             if bracket == "(" or bracket == "{" or bracket == "[":
                 stack.append(bracket)
             else:
-                if len(bracket) == 0:
+                if len(stack) == 0:
                     return False
                 e = stack.pop()
                 if((bracket == ")" and e == "(") or (bracket == "}" and e == "{") or (bracket == "]" and e == "[")):
