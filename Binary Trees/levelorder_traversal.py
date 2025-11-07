@@ -19,7 +19,7 @@ class Solution(object):
             level_size = len(queue)
             current_level = []
             
-            for i in range(level_size):
+            for _ in range(level_size):
                 node = queue.popleft()
                 current_level.append(node.val)
                 if node.left is not None:
